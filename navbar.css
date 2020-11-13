@@ -1,0 +1,111 @@
+.menu{
+    display: inline-block;
+    cursor: pointer;
+    display: none;
+   
+    padding: 0 0 0 2px;
+  }
+  .menu.active{
+    background: #fff;
+  }
+  .menu ul{
+    position: absolute;
+    left:0;
+    top:52px;
+    background:rgba(255,255,255);
+    width:120px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .menu ul{
+      width: 100%;
+      position: absolute;
+  }
+  .menu.active ul{
+    opacity: 1;
+    max-height: 400px;
+  }
+  .menu ul li a{
+    display: block;
+    padding:15px 34px;
+    font-size: 18px;
+    
+  }
+  .menu ul li a:hover{
+    background: #C4ACAC;
+    color: white;
+  }
+  ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .bar{
+    width: 22px;
+    height: 2px;
+    background: black;
+      margin: 6px 0;
+      border-radius: 2px;
+  }
+  .active .bar1{
+      -webkit-transform: rotate(-45deg) translate(-9px, 7px) ;
+      transform: rotate(-45deg) translate(-9px, 7px) ;
+  }
+
+  .active .bar2{
+      opacity: 0;}
+
+  .active .bar3{
+      -webkit-transform: rotate(45deg) translate(-9px, -8px) ;
+      transform: rotate(45deg) translate(-9px, -8px) ;
+  }
+/* sdsds---------------- */
+    .navBar a {
+        color: black;
+    }
+
+    .navBar {
+        background: white;
+        padding: 10px 0;
+    }
+
+    .navWrap {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1456px;
+        margin: 0 auto;
+        position: relative;
+        padding: 0 30px 0 30px;
+
+
+    }
+
+    .navGroup {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav1 {
+        margin-left: 32px;
+    }
+    @media screen and (max-width: 850px) {
+            .menu{
+                display: unset;
+            }
+            .logo{
+            margin-left: 5px;}
+            .navBar{
+                position: fixed;
+                top: 0;
+                
+                width: 100%;
+                z-index: 3;
+            }
+            .Show{
+              display: none;
+          }
+          .none{
+              display: unset;
+          }
+            }

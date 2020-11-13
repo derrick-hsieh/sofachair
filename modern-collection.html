@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Sitka Heading;
+            background: #FCFCFC;
+        }
+
+        .wrapper {
+            margin: 0 auto;
+            max-width: 1344px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        header {
+            padding: 60px 0 0 0;
+        }
+
+        @media screen and (max-width: 850px) {
+            .container {
+                flex-direction: row;
+                flex-wrap: wrap;
+                display: flex;
+
+            }
+
+            header {
+                padding: 40px;
+                background: #C4ACAC;
+
+            }
+
+            .red {
+                visibility: hidden;
+            }
+
+            .sofa {
+                margin-left: -150px;
+            }
+
+
+        }
+
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .drop-btn {
+            background: #C4ACAC;
+            border: none;
+            cursor: pointer;
+            padding: 16px;
+            font-size: 24px;
+            color: #FCFCFC;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #FCFCFC;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.157);
+            z-index: 1;
+
+        }
+
+        .dropdown-content a {
+            color: #C4ACAC;
+            padding: 12px 16px;
+            font-size: 24px;
+            text-decoration: none;
+            display: block;
+
+        }
+
+        .dropdown-content a:hover {
+            background: #C4ACAC;
+            color: #FCFCFC;
+
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .drop-btn {
+            background-color: rgb(162, 140, 140);
+        }
+
+        .red {
+            position: absolute;
+            display: block;
+            bottom: -5%;
+            right: 50%;
+            left: -50%;
+            top: -100%;
+            background: #C4ACAC;
+            z-index: -54;
+        }
+
+        header button {
+            text-decoration: none;
+            border: none;
+            margin: 0 45px 0 0;
+            font-size: 24px;
+            color: #FCFCFC;
+            background: #C4ACAC;
+            cursor: pointer;
+        }
+
+        nav {
+            margin: 100px 0 0 0;
+
+
+        }
+
+        .slideshow {
+            justify-content: center;
+            position: relative;
+
+
+        }
+
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 2s;
+            animation-name: fade;
+            animation-duration: 2s;
+        }
+
+        .mySlides {
+            display: none;
+
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        .cover-fit {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.397);
+
+        }
+
+        .coverfit {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        main {
+            height: 700px;
+            padding-top: 300px;
+        }
+
+        .animate__fadeInLeft {
+            --animate-duration: 2s;
+            animation: fadeInLeft;
+            animation-duration: 2s
+        }
+
+        .main-sec {
+            width: 100%;
+            padding-bottom: 300PX;
+        }
+
+        .main-pic {
+            transition: transform .5s;
+            position: relative;
+            opacity: 1;
+            transition: .5s ease;
+            backface-visibility: hidden;
+
+        }
+
+        .middle {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #008CBA;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .main-pic:hover {
+            transform: scale(1.05);
+            opacity: 0.3;
+
+        }
+
+        .middle:hover {
+            opacity: 1;
+        }
+
+        .sec-2 {
+            justify-content: space-between;
+
+        }
+
+        .sofa {
+            padding-left: 150px;
+            width: 350px;
+        }
+
+        .armchair {
+            width: 350px;
+            padding-right: 150px;
+
+
+        }
+
+        .main-sec span {
+            font-size: 63px;
+            margin: 0;
+            color: #C4ACAC;
+
+        }
+
+        .main-sec p {
+            color: #BFBFBF;
+            margin: 0;
+            padding-top: 60px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header id="myTopnav" class="container">
+            <button href="http://127.0.0.1:5501/portfolio.html">Home </button>
+            <div class="dropdown">
+                <button class="drop-btn">Collection</button>
+                <div class="dropdown-content">
+                    <a href="http://127.0.0.1:5501/description2.html">Sofa</a>
+                    <a href="http://127.0.0.1:5501/description3.html">Lounge</a>
+                    <a href="http://127.0.0.1:5501/description.html">Arm Chair</a>
+                </div>
+            </div>
+
+            <button href="http://127.0.0.1:5501/about.html">Contact</button>
+        </header>
+        <nav class="slideshow">
+            <div class="red"></div>
+            <div class="mySlides fade">
+                <img class="cover-fit" src="fyurniture/Parisian_living_room_by_Lichelle_Silvestry.png" alt="">
+                <div class="numbertext"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <img class="cover-fit" src="fyurniture/salon-salle-a-manger-haussmannien.png" alt="">
+                <div class="numbertext"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <img class="cover-fit" src="fyurniture/sofa-184551_1280.png" alt="">
+                <div class="numbertext"></div>
+            </div>
+        </nav>
+        <main class="container">
+            <div class="main-sec flex container">
+                <div class="main-pic lounge-pic">
+                    <a href=""><img data-0="transform:scale(0); transition:1.8s; " data-600="transform:scale(1)"
+                            class="coverfit " src="fyurniture/mainpage/Stockholm-2018-Fredericia-17.png" alt=""></a>
+                    <div class="middle">
+                        <a href="http://127.0.0.1:5501/description2.html">
+                            <div class="text"> See More</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="sofa">
+
+                    <span data-0="opacity:0; transition:1s; " data-700="opacity:1; ">Sofa </span>
+                    <p data-0="opacity:0; transition:1s; " data-700="opacity:1;"> A heightened leg design that makes a
+                        statement all its own. A beautiful bench cushion that's undeniably stylish but still cozy enough
+                        for naps. If there ever were a sofa that so easily balanced clean design and roomy comfort,
+                        Winslow is it.</p>
+                </div>
+            </div>
+            <div class="main-sec flex sec-2 container">
+
+                <div class="armchair ">
+                    <span data-0="opacity:0; transition:1.8s; " data-1100="opacity:1; ">Arm Chair </span>
+                    <p data-0="opacity:0; transition:1.8s; " data-1100="opacity:1; ">A perfect addition to any modern
+                        home design, the goatskin leather lounge chair is sure to be the focal point and main attraction
+                        of any room it's placed into. In addition to the beautiful design</p>
+                </div>
+                <div class="main-pic">
+                    <a href=""><img data-0="transform:scale(0); transition:1.8s; " data-650="transform:scale(1)"
+                            class="coverfit" src="fyurniture/mainpage/0fa270f108f92125843add2d5a12ecfd.png" alt=""></a>
+                    <div class="middle">
+                        <a href="http://127.0.0.1:5501/description.html">
+                            <div class="text"> See More</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-sec flex container">
+                <div class="main-pic">
+                    <a href=""><img data-0="transform:scale(0); transition:1.8s; " data-1200="transform:scale(1)"
+                            class="coverfit" src="fyurniture/mainpage/Wenona+Chaise+Lounge.png" alt=""></a>
+                    <div class="middle">
+                        <a href="http://127.0.0.1:5501/description3.html">
+                            <div class="text"> See More</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="sofa">
+                    <span data-0="opacity:0; transition:1.8s; " data-2000="opacity:1; ">Lounge</span>
+                    <p data-0="opacity:0; transition:1.8s; " data-2000="opacity:1; "> This chaise lounge offers the
+                        optimal foundation for lavish relaxation. Thanks to the scroll back design which is complied
+                        with ergonomics, this chaise lounge is well padded for laying comfort. </p>
+                </div>
+            </div>
+
+        </main>
+        <aside class="container">
+
+        </aside>
+
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+
+    </script>
+    <script type="text/javascript" src="fyurniture/skrollr-master/src/skrollr.js"></script>
+    <script type="text/javascript">
+        var s = skrollr.init();
+    </script>
+
+</body>
+
+</html>

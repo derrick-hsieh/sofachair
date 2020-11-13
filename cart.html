@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.13.1-web/css/all.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="/font.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="title1 t2">
+        購物車
+    </div>
+    <div class="bodyWrapper container1">
+        <div class=" container">
+
+            <div class="cartItem ">
+                <div class="cartPic ">
+                    <img class="coverfit" src="/category/armchiarpic3.png" alt="">
+                </div>
+                <div class="intro">
+                    <div class="productName t3">Orion</div>
+                    <div class="productType t6">扶手椅</div>
+                    <div class="price t4">$1,500</div>
+                </div>
+                <div id="input_div">
+                    <div class="amount t6">數量</div>
+                    <input type="button" value="-" id="moins" onclick="minus()">
+                    <input type="text" size="6" value="1" id="count">
+                    <input type="button" value="+" id="plus" onclick="plus()">
+                </div>
+                <div class="summary">
+                    <div class="sumText t6">總價</div>
+                    <div class="sumval t4">$3,000</div>
+                </div>
+                <div class="trash">
+                    <img class="coverfit" src="/svg/Group 164.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="sumList container1" >
+            <div class="discount">
+                <div class="title2 t4">線上折扣碼</div>
+                <div class="address t6">使用線上折扣碼可享優惠</div>
+                <div class="coupon t5"><input type="text"></div>
+                <button class="btn t5">使用</button>
+            </div>
+            <div class="discount">
+                <div class="title2 t4">貨運配送</div>
+                <div class="address t6">城市</div>
+                <select name="" id=""></select>
+                <div class="address t6">區域</div>
+                <select name="" id=""></select>
+            </div>
+            <div class="discount">
+                <div class="title2 t4">總攬</div>
+                <div class="flex">
+                <div class="address2 ">商品數</div>
+                <div class="address2 ">2</div>
+                </div>
+                <div class="flex">
+                    <div class="address2 ">運費</div>
+                    <div class="address2 t6"> </div>
+                    </div>
+                    <div class="flex">
+                        <div class="address2 t5">總計</div>
+                        <div class="address2 t5">＄4,800</div>
+                        </div>
+                        <button class="sumBtn t6">前往付款</button>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        var count = 1;
+        var countEl = document.getElementById("count");
+        function plus() {
+            count++;
+            countEl.value = count;
+        }
+        function minus() {
+            if (count > 1) {
+                count--;
+                countEl.value = count;
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

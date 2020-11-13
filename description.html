@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Sitka Heading;
+            background: #FCFCFC;
+        }
+
+        .wrapper {
+            margin: 0 auto;
+            max-width: 1344px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+       
+      
+    header {
+            padding: 60px 0 0 0;
+            
+            
+        }
+        .red {
+            position: absolute;
+            display: block;
+            bottom: -30%;
+            right: 60%;
+            left: -50%;
+            top: -100%;
+            background: #C4ACAC;
+            z-index: -54;
+        }
+@media screen and (max-width: 993px){
+    .red{
+        visibility: hidden;
+    }
+      header {
+            padding: 40px ;
+            background: #C4ACAC;
+            
+        }
+
+    }
+    header button{
+           text-decoration: none;
+           border: none;
+           margin: 0 45px 0 0;
+           font-size: 24px;
+           color: #FCFCFC;
+           background:#C4ACAC ;
+           cursor: pointer;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .drop-btn{
+            background:#C4ACAC ;
+            border: none;
+            cursor: pointer;
+            padding: 16px;
+            font-size: 24px;
+            color:#FCFCFC;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #FCFCFC;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.157);
+            z-index: 1;
+
+        }
+        .dropdown-content a{
+            color:#C4ACAC ;
+            padding: 12px 16px;
+            font-size: 24px;
+            text-decoration: none;
+            display: block;
+        
+        }
+        .dropdown-content a:hover{
+            background:#C4ACAC ;
+            color:#FCFCFC ;
+
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .drop-btn {
+        background-color: rgb(162, 140, 140);
+        }
+
+@media screen and (max-width: 850px){
+    .container{
+       flex-direction: row;
+       flex-wrap: wrap;
+        display: flex; 
+        
+    }
+    
+}
+        nav {
+            margin: 100px 0 0 0;
+            display: flex;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        nav {
+            width: 100%;
+        }
+
+        .card {
+            width: 672px;
+            height: 657px;  
+        }
+        .card1{
+            
+            justify-content: center;
+            
+
+        }
+
+        .span1 {
+            padding-left: 12%;
+        }
+
+        .span1 p {
+            color: #C4ACAC;
+            font-size: 40px;
+            padding: 60px 0 30px 0;
+            margin: 0;
+        }
+
+        .cover-fit {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .lounge {
+            font-size: 63px;
+        }
+
+        .feature {
+            font-size: 21px;
+            width: 350px;
+            padding: 0;
+            color: #BFBFBF;
+        }
+
+        .wrapper1{
+            
+            justify-content: center;
+        }
+        .card1{
+            justify-content: center;
+        }
+
+        main {
+            padding-top:50px ;
+            justify-content: center;          
+            background: #F8F2EB;
+        }
+        main .title{
+            font-size: 70px;
+            color:#C4ACAC ;
+        }
+        .product{
+            
+            width: 100%;
+            padding: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main .des-box {
+            max-width: 800px;
+            border: 25px solid #C4ACAC;
+            padding: 40px 60px 50px 40px;
+            position: relative;
+            background: white;
+
+        }
+
+        main .cover-fit {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .loungepic{
+            width: 450px;
+            height: 450px;
+        }
+
+        .des-box span {
+            font-size: 34px;
+        }
+
+        .des-p {
+            color: #BFBFBF;
+            font-size: 21px;
+            padding: 0;
+            padding-top: 15px;
+            margin: 0;
+            max-width: 560px;
+        }
+        .chair{
+            display: flex;
+            width: 100%;
+        
+        }
+        .arm{
+            width: 541px;
+            width: 502px;
+           
+            
+        }
+        .chair1{
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+        .text span{
+            font-size: 48px;
+            padding-left: 10px;
+        }
+        .text{
+            font-family:SimSun-ExtB;
+            max-width: 300px;
+            padding-top: 50px;
+        }
+        .text p{
+            padding-right: 20px;
+            padding-left: 10px;
+        }
+        .myslides{
+            transform: translateX(-800px) translateY(0);
+            
+        }
+        .myslides1{
+            transform: translateX(800px) translateY(0);
+            
+        }
+        .myslides2{
+            transform: translateX(-800px) translateY(0);
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header id="myTopnav" class="container">
+            <button href="http://127.0.0.1:5501/portfolio.html">Home </button> 
+            <div class="dropdown">
+            <button class="drop-btn">Collection</button>
+            <div class="dropdown-content">
+                <a href="http://127.0.0.1:5501/description2.html">Sofa</a>
+                <a href="http://127.0.0.1:5501/description3.html">Lounge</a>
+                <a href="http://127.0.0.1:5501/description.html">Arm Chair</a>
+            </div>
+            </div>
+            
+            <button href="http://127.0.0.1:5501/about.html">Contact</button>
+        </header> 
+        <nav class="flex container">
+            <div class="red"></div>
+            <div class="card">
+                <img class="mySlides cover-fit" src="fyurniture/description/Alvarado+Lounge+Chair.jpg" alt="">
+               
+                
+            </div>
+            <div class="span1 container">
+                <span class="lounge">Arm Chair</span>
+                <p>Borst  Armchair </p>
+                <div class="feature">
+                    <span>Features<br>
+                        This armchair is an additional in the living room of every TV lover who wants to finish for this room.
+                    </span>
+                </div>
+            </div>
+        </nav>
+        </div>
+        <main class="container">
+            <div class="wrapper1 container">
+                <div class="w3-display-container card1 container">
+                    <div class="chair container" data-0="transform:translateX(-800px) translateY(0); transition:1.2s; " data-600="transform:translateX(0) translateY(0);">
+                    <div class="arm">
+                    <img data-0="transform:translateX(-800px) translateY(0); transition:1.2s; " data-600="transform:translateX(0) translateY(0);"  class="myslides1 cover-fit" src="fyurniture/description/armchari3.png" alt="">
+                    
+                </div>
+                <div class="text">
+                <span>Alvarado </span>
+                    <p>This arm chair is what happens 
+                        when modern design meets 
+                        organic materials, made from actual 
+                        goatskin leather. A perfect 
+                        addition to any modern home 
+                        design, the goatskin leather lounge 
+                        chair is sure to be the focal point 
+                        and main attraction of any room it's 
+                        placed into. 
+                        Not Included:
+                        Ottoman
+                        Toss Pillows
+                        </p></div></div>
+                        <div class="chair1 container" data-0="transform:translateX(800px) translateY(0); transition:1.2s; " data-600="transform:translateX(0) translateY(0);">
+                            <div class="arm">
+                            <img data-0="transform:translateX(800px) translateY(0); transition:1.2s; " data-600="transform:translateX(0) translateY(0);"  class="myslides1 cover-fit" src="fyurniture/description/armchair2.png" alt="">
+                            
+                        </div>
+                        <div class="text">
+                        <span>Carrington </span>
+                            <p>This genuine leather and teak solid wood Mid century modern style designer lounge chair combination is what happens when modern design meets organic materials. Designs inspired from Mid Century Modern furniture style to Scandinavian lines with handmade master craftsmanship. A perfect addition to any modern homes and the leather lounge chair is sure to be the focal point and main attraction of any room it's placed into. In addition to the beautiful design, kiln-dried teak frame completes the leather upholstery amazingly to create comfort in any living room furniture setup.
+                                </p></div></div>
+                                <div class="chair container" data-0="transform:translateX(-800px) translateY(0); transition:1.2s; " data-600="transform:translateX(0) translateY(0);">
+                                    <div class="arm">
+                                    <img data-0="transform:translateX(-800px) translateY(0); transition:1.2s; " data-600="transform:translateX(0) translateY(0);"  class="myslides1 cover-fit" src="fyurniture/description/armchair1.png" alt="">
+                                    
+                                </div>
+                                <div class="text">
+                                <span>EKENÄSET </span>
+                                    <p>EKENÄSET armchair adds a stylish retro vibe to the room which is inspired by 1950s Scandinavian design. Place it in your living room, bedroom or hallway to enjoy comfy seating and a classic look.
+                                        </p></div></div>
+                <!-- <div class="arm">
+                    <img data-0="transform:translateX(800px) translateY(0); transition:1.2s; " data-1200="transform:translateX(0) translateY(0);" class="myslides2 cover-fit" src="fyurniture/description/armchair1.png"
+                        alt=""></div>
+                        <div class="arm">     
+                    <img data-0="transform:translateX(-800px) translateY(0); transition:1.2s; " data-1800="transform:translateX(0) translateY(0);" class="myslides cover-fit" src="fyurniture/description/armchair2.png" alt="">
+                </div> -->
+                   
+                </div>        
+    </div>
+        </main>
+
+        
+        <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+        <script type="text/javascript" src="fyurniture/skrollr-master/src/skrollr.js"></script>
+        <script type="text/javascript">
+        var s = skrollr.init();
+        </script>
+        
+        
+        
+        </script>
+</body>
+
+</html>

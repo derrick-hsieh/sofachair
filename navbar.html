@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/font.css">
+    <link rel="stylesheet" href="/navbar.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navBar">
+        <div class="navWrap">
+
+            <div class="navGroup">
+                <div class="menu transition">
+                    <div class="bar bar1 transition"></div>
+                    <div class="bar bar2 transition"></div>
+                    <div class="bar bar3 transition"></div>
+                    <ul class="transition">
+                        <li><a class="transition">首頁</a></li>
+                        <li><a class="transition">產品</a></li>
+                        <li><a class="transition">Collection</a></li>
+                        <li><a class="transition">會員登入/註冊</a></li>
+                    </ul>
+                </div>
+                <div class="logo t2"> <a href="">Comfy</a> </div>
+                <div class="nav1 Show t5"> <a href="">首頁</a></div>
+                <div class="nav1 Show t5"> <a href="">Collection</a></div>
+                <div class="nav1 Show t5"> <a href="">產品</a></div>
+            </div>
+
+
+            <div class="navGroup">
+                <div class="nav1 t5"> <a href=""><img src="/svg/favorite_border-24px.svg" alt=""></a> </div>
+                <div class="nav1  t5"> <a href=""><img src="/svg/shopping_cart-24px.svg" alt=""></a>
+                </div>
+                <div class="nav1 Show t5"> <a href=""><img src="/svg/person-24px.svg" alt=""> 謝承甫</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script>
+        $(".menu").click(function () {
+            $(this).toggleClass('active');
+        });
+    </script>
+</body>
+
+</html>

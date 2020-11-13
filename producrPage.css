@@ -1,0 +1,133 @@
+
+  .navBar1{
+    height: 1px;
+    background: red;
+}
+.navbar{
+    
+    justify-content: space-between;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-left: 1.5rem;
+}
+.navcart{
+    margin-left: 500px;
+}
+@media screen and (max-width: 1145px) {
+    .navcart{
+        margin-left: 0px;
+    }
+}
+/* nav----------------- */
+.bodyWrapper{
+    max-width: 1314px;
+    margin: 0 auto;
+}
+.mySlides{
+   max-height: 641px;
+   max-width: 641px;
+   position: relative;
+   
+}
+.column{
+    width: 13%;
+}
+.coverfit{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.container{
+    max-width: 641px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.title1{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+}
+.likeList{
+    display: flex;
+    justify-content: space-between;
+}
+.likePic{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+
+}
+.color{
+    display: flex;
+}
+.circle{
+    background: red;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+.infoWrap{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 15px 0;
+}
+.infoBar{
+    background: black;
+    height: 1px;
+
+}
+.heartList{
+    margin: 20px 0 0 0;
+    border: black 1px solid;
+    font-size:18px;
+    display: flex;
+    justify-content: center;
+}
+.cart{
+    margin: 20px 0 0 0;
+    background: black ;
+    color: white;
+    font-size:18px;
+    display: flex;
+    justify-content: center;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    
+}
+.information{
+    padding: 100px 0 0 50px;
+
+}
+.productName{
+    font-size: 32px;
+}
+.productType{
+    font-size: 18px;
+}
+.price{
+    font-size: 24px;
+    margin: 20px 0 20px 0;
+}
+.color{
+    font-size: 18px;
+    margin:0 0 20px 0 ;
+}
+.descrip{
+    margin:0 0 20px 0 ;
+    
+}
+.moreInfo{
+    font-size: 18px;
+}
+.productBar{
+    height: 1px;
+    background: #C4ACAC;
+    margin: 20px 0 0 0;
+}
+

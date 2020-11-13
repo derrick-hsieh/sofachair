@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Sitka Heading;
+            background: #FCFCFC;
+        }
+
+        .wrapper {
+            margin: 0 auto;
+            max-width: 1344px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+       
+      
+    header {
+            padding: 60px 0 0 0;
+            
+            
+        }
+        .red {
+            position: absolute;
+            display: block;
+            bottom: -30%;
+            right: 60%;
+            left: -50%;
+            top: -100%;
+            background: #C4ACAC;
+            z-index: -54;
+        }
+@media screen and (max-width: 993px){
+    .red{
+        visibility: hidden;
+    }
+      header {
+            padding: 40px ;
+            background: #C4ACAC;
+            
+        }
+
+    }
+    header button{
+           text-decoration: none;
+           border: none;
+           margin: 0 45px 0 0;
+           font-size: 24px;
+           color: #FCFCFC;
+           background:#C4ACAC ;
+           cursor: pointer;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .drop-btn{
+            background:#C4ACAC ;
+            border: none;
+            cursor: pointer;
+            padding: 16px;
+            font-size: 24px;
+            color:#FCFCFC;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #FCFCFC;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.157);
+            z-index: 1;
+
+        }
+        .dropdown-content a{
+            color:#C4ACAC ;
+            padding: 12px 16px;
+            font-size: 24px;
+            text-decoration: none;
+            display: block;
+        
+        }
+        .dropdown-content a:hover{
+            background:#C4ACAC ;
+            color:#FCFCFC ;
+
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .drop-btn {
+        background-color: rgb(162, 140, 140);
+        }
+
+@media screen and (max-width: 850px){
+    .container{
+       flex-direction: row;
+       flex-wrap: wrap;
+        display: flex; 
+        
+    }
+    
+}
+        nav {
+            margin: 100px 0 0 0;
+            
+        }
+
+       
+
+        nav {
+            width: 100%;
+        }
+
+        .card {
+            width: 672px;
+            height: 657px;  
+        }
+        .card1{
+            
+            justify-content: center;
+            
+
+        }
+
+        .span1 {
+            padding-left: 12%;
+        }
+
+        .span1 p {
+            color: #C4ACAC;
+            font-size: 40px;
+            padding: 60px 0 30px 0;
+            margin: 0;
+        }
+
+        .cover-fit {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .lounge {
+            font-size: 63px;
+        }
+
+        .feature {
+            font-size: 21px;
+            width: 350px;
+            padding: 0;
+            color: #BFBFBF;
+        }
+
+        .wrapper1{
+            
+            justify-content: center;
+        }
+        
+        .name{
+            display: flex;
+            width: 100%;
+        }
+        .span{
+            padding-left: 100px;
+        }
+        @media screen and (max-width: 850px){
+            .span{
+                padding: 0;
+
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header id="myTopnav" class="container">
+            <button href="http://127.0.0.1:5501/portfolio.html">Home </button> 
+            <div class="dropdown">
+            <button class="drop-btn">Collection</button>
+            <div class="dropdown-content">
+                <a href="http://127.0.0.1:5501/description2.html">Sofa</a>
+                <a href="http://127.0.0.1:5501/description3.html">Lounge</a>
+                <a href="http://127.0.0.1:5501/description.html">Arm Chair</a>
+            </div>
+            </div>
+            
+            <button href="http://127.0.0.1:5501/about.html">Contact</button>
+        </header> 
+        <nav class="flex container">
+            <div class="red"></div>
+            <h1>Conatct Us</h1>
+            <div class="name container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499930.4918683586!2d-3.2927291568876464!3d52.27355869279234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb12410664e99780a!2sCousins%20Furniture%20Stores!5e0!3m2!1szh-TW!2stw!4v1592846606637!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div class="span">
+            
+            <p>Customer Service Hours </p>
+
+             <p>   Monday - Friday <br>
+                9AM - 6PM EST</p>
+                
+              <span>  Private message us on Twitter and include your order number</span>
+                
+               <p> Email</p>
+                
+               <p> customerservice@kith.com</p>
+                
+               <p> Phone</p>
+                
+               <p>212-813-3395</p>
+                   </div></div>
+        </nav>
+        </main>
+
+        
+        <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+        <script type="text/javascript" src="fyurniture/skrollr-master/src/skrollr.js"></script>
+        <script type="text/javascript">
+        var s = skrollr.init();
+        </script>
+        
+        
+        
+        </script>
+</body>
+
+</html>

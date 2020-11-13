@@ -1,0 +1,132 @@
+/* <!-- nav---------------- --> */
+body{
+    font-family:  'Playfair Display', serif;
+}
+.style{
+    height: 560px;
+    position: relative;
+}
+.styleTitle{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    color: white;
+    font-size: 48px;
+}
+.coverfit{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.styleCover{
+    filter: brightness(0.65);
+}
+/* <!-- nav---------------- --> */
+/* intro------------------- */
+.bodywrapper{
+    max-width: 1314px;
+    margin: 0 auto;
+    padding:0 20px;
+
+}
+.introBox{
+    padding:0 20px;
+}
+.introPic1{
+    max-width: 630px;
+    max-height: 380px;
+    
+}
+.intro1{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.introText{
+    
+    font-size: 24px;
+    display: flex;
+    
+}
+.introPic2{
+    max-width: 469px;
+    max-height: 487px;
+
+}
+.introPic3{
+    width: 766px;
+    height: 463px;
+}
+/* intro------------------- */
+.title1{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+}
+.shopFilter{
+    display: flex;
+    justify-content: space-between;
+}
+.filter{
+    width: 115px;
+    height: 34px;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shopBar{
+    height: 1px;
+    background: black;
+    margin: 50px 0;
+    width: 100%;
+}
+/* card------------------ */
+.shopWrap1{
+    display: flex;
+    justify-content: space-between;
+}
+.productWrap{
+    max-width: 300px;
+    padding:0 10px;
+}
+.productPic{
+    max-width: 325px;
+    max-height: 388px;
+    background:#F0F0F0 ;
+    margin-top: 70px;
+    position: relative;
+}
+.disccount{
+    position: absolute;
+    top:7%;
+    left: 7%;
+}
+.productName{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+
+}
+.heart{
+    position: absolute;
+    top:8%;
+    right: 7%;
+    max-width: 30px;
+    max-height: 30px;
+    
+}
+/* page------------------- */
+.page{
+    margin: 100px 0 0 0;
+}
+.pagination{
+    justify-content: center;
+}
+@media screen and (max-width: 850px) {
+    
+    }

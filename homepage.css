@@ -1,0 +1,495 @@
+
+
+body{
+    font-family:  'Playfair Display', serif;
+}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {
+    height:13px;
+    width:13px;
+    padding:0;
+    margin: 5px;
+ }
+.homeImg {
+    max-width: 100%;
+    height: 95vh;    
+}
+
+.coverfit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+header {
+    display: flex;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    padding: 30px 0 30px 0;
+}
+
+header a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.headWrapper {
+    position: relative;
+    height: 100%;
+
+
+}
+
+.mySlides {
+    display: none;
+}
+
+.slideShow-wrapper {
+
+    position: relative;
+    margin-bottom: 100px;
+}
+.slidecover{
+    filter: brightness(0.65);
+}
+.badgeWrap{
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    left: 47%;
+}
+
+/* arrow------------------------- */
+.left-arrow {
+    position: absolute;
+    left: 5%;
+    top: 45%;
+    background: none;
+    border: none;
+    width: 60px;
+
+
+}
+
+.right-arrow {
+    position: absolute;
+    right: 5%;
+    top: 45%;
+    background: none;
+    border: none;
+    width: 60px;
+
+
+}
+
+/* .arrow {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(159deg) brightness(105%) contrast(103%);
+} */
+
+.arrow:hover {
+    box-shadow: rgba(0, 0, 0, 0.623);
+
+
+}
+
+:focus {
+
+    outline: 0;
+
+}
+
+.caption {
+    position: absolute;
+    right: 37%;
+    top: 45%;
+    font-size: 48px;
+    font-weight: lighter;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.844);
+}
+
+
+
+/* body-------------- */
+.bodyWrapper {
+    margin: 0 auto;
+    max-width: 1314px;
+    justify-content: center;
+    
+}
+
+
+.flex {
+    display: flex;
+}
+/* 商品類別------ */
+.title1{
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    
+    font-weight: bold;
+
+}
+.title-bar{
+    height: 3px;
+    max-width: 50px;
+    background: #C4ACAC;
+    margin:20px auto 100px auto;
+}
+.categoryPic{
+    width: 171px;
+    height: 166px;
+    
+
+}
+.sofaCover{
+    width: 344px;
+    height: 166px;
+    
+  
+}
+.category{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    
+    height: 350px;
+}
+.cateName{
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    margin: 20px 0 20px 0;
+}
+/* 商品類別------ */
+/* 新價格-------------- */
+.newPrice{
+    height: 520px;
+    position: relative;
+    margin-bottom: 100px;
+
+}
+.newPriceCap{
+    position: absolute;
+    left: 44%;
+    top:40%;
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+}
+.newPriceCover{
+    filter: brightness(0.55);
+}
+.newPrice button{
+    font-size: 18px;
+    background: #C4ACAC;
+    padding: 10px 22px;
+    border: none;
+    color: white;
+    position: absolute;
+    left: 46.5%;
+    top: 59%;
+ 
+    
+
+
+}
+/* 新價格-------------- */
+/* 居家風格－－－－－－－－－－－ */
+main {
+    height: 700px;
+   
+}
+
+.animate__fadeInLeft {
+    --animate-duration: 2s;
+    animation: fadeInLeft;
+    animation-duration: 2s
+}
+
+.main-sec {
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 170PX;
+}
+.none{
+    display: none;
+}
+
+.main-pic {
+    transition: transform .5s;
+    position: relative;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+}
+
+.middle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.317);
+}
+
+.text {
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: white 1px solid;
+    padding:10px 20px;
+}
+
+.main-pic:hover {
+    transform: scale(1.05);
+    /* opacity: 0.3; */
+
+}
+
+.middle:hover {
+    opacity: 1;
+}
+
+.sec-2 {
+    justify-content: space-between;
+
+}
+
+.sofa {
+    padding-top:97px ;
+    
+    align-items: center;
+    
+}
+.traditional{
+    padding-top:97px ;
+    
+    align-items: center;
+}
+.styleCover{
+    max-width: 757px;   
+    max-height: 504px;
+}
+
+.armchair {
+    width: 350px;
+    padding-right: 150px;
+
+
+}
+
+
+
+
+.styleBar{
+    background:#C4ACAC ;
+    margin-top: 55px;
+    height: 2px;
+    width: 242px;
+}
+/* 居家風格－－－－－－－－－－－ */
+/* Collection------------ */
+.collection{
+    justify-content: space-between;
+
+}
+.CollectionPic{
+    max-height: 630px;
+    max-width: 640px;
+    position: relative;
+    margin-bottom: 60px;
+
+}
+.collectionCover{
+filter: brightness(0.65);
+
+}
+.collectionName{
+    position: absolute;
+    left: 15%;
+    top: 16%;
+    font-size: 48px;
+    color: white;
+}
+/* contact------------------------- */
+.contactBar{
+    height: 1px;
+    background:#707070 ;
+    margin:128px 0 53px 0 ;
+    width: 100%;
+}
+.contactTitle{
+    font-size: 48px;
+    margin-bottom:100px ;
+    display: flex;
+    justify-content: space-around;
+}
+.emailbox{
+    width: 520px;
+    height: 50px;
+    border: black 1px solid ;
+    padding: 0 0 0 10px;
+}
+.socialmedia{
+height: 35px;
+width:35px;
+margin-right: 15px;
+
+}
+.footerWrap{
+    max-width: 1920px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+    
+}
+.footerFont{
+    font-size: 18px;
+    color: grey;
+    
+}
+.footerMargin{
+    margin-bottom: 15px;
+
+}
+@media screen and (max-width: 1050px) {
+    .container1 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+
+    }
+    .logo{
+        margin-left: 5px;
+    }
+    .caption{
+        right: 27%;
+    }
+    .main-sec{
+        justify-content: center;
+        text-align: center;
+    }
+    .traditional{
+        display: none;
+    }
+    .Show{
+        display: none;
+    }
+    .none{
+        display: unset;
+    }
+    .sofa{
+        padding-top:25px ;
+    }
+    .sofa p{
+        margin-bottom: 40px;
+    }
+    .middle{
+        display: none;
+    }
+    .rwdBtn{
+        padding: 8px 18px;
+        background: #C4ACAC;
+        color: white;
+        
+    }
+    .newPriceCap{
+        left: 40%;
+    }
+    .newPrice button{
+        font-size: 15px;
+        padding: 8px 18px;
+        left:45.5%
+    }
+    .collection{
+        justify-content: center;
+    }
+    .footWrap{
+        justify-content: center;
+    }
+    .styleBar{
+        display: none;
+    }
+ 
+}
+@media screen and (max-width: 375px) {
+    .homeImg{
+        height: 65vh;
+    }
+    .caption{
+        right: 13%;
+        font-size: 28px;
+        
+    }
+    .badgeWrap{
+        left: 40%;
+    }
+    .title-bar{
+        margin:20px auto 60px auto ;
+    }
+    .sofaCover{
+        width: 278px;
+        height: 146px;
+    }
+    .cateName{
+        
+        margin: 10px 0 20px 0;
+    }
+    .main-sec{
+        padding-bottom: 100px;
+    }
+    .rwdBtn{
+        padding: 8px 111px;
+    }
+    .category{
+        height: 434px;
+    }
+    .categoryPic{
+        width: 110px;
+    height: 134px;
+    }
+    .CollectionPic{
+        margin-bottom:0 ;
+    }
+    .newPriceCap{
+        left: 30%;
+    }
+    .newPrice button{
+        left:35.5% ;
+    }
+    .footerWrap{
+        justify-content: unset;
+    }
+   .emailbox{
+       width: 325px;
+       height: 40px;
+   }
+   .newsletter{
+       padding: 15px 0 0 18px;
+   }
+   .follow{
+    padding: 15px 0 0 18px;
+   }
+   .info{
+       padding:0 0 0 18px
+   }
+   .contactTitle{
+       margin-bottom: 60px;
+   }
+}
